@@ -1,0 +1,221 @@
+@font-face{
+    font-family: Cinzel;
+    src: url(assets/Cinzel-Regular.ttf) format('truetype');
+}
+
+.text-center{
+    text-align: center;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#headerLeft{
+    flex-grow: 1;
+    width: 100px;
+}
+
+#headerLeft a:hover{
+    color: rgb(77, 255, 246);
+}
+
+#headerMiddle{
+    font-family: Cinzel;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 25%;
+
+    flex-grow: 2;
+}
+
+#headerRight{
+    flex-grow: 1;
+    width: 100px;
+}
+
+.page-container{
+    position: relative;
+    min-height: 98vh;
+}
+
+.content{
+    padding-bottom: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+body{
+    background: linear-gradient(180deg, palegreen, mediumseagreen) fixed;
+    color: white;
+    font-size: 1.2em;
+}
+
+#timelineBackground{
+    background: mediumseagreen url("assets/paperSmall.png") repeat-y scroll center;
+    background-size: 100% 50%;
+}
+
+#welcome{
+    text-align: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    color: white;
+    overflow: hidden;
+}
+
+.author{
+    float: right;
+}
+
+#image{
+    display: flex;
+    justify-content: center;
+}
+
+#imageText{
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    width: 100%;
+    height: 2rem;
+}
+
+.homepageNav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.homepageNav > div{
+    margin: 10px;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    text-align: center;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: rgb(146, 146, 146);
+    background-color: rgb(146, 38, 30);
+    padding: 16px;
+    cursor: pointer;
+}
+
+nav a:hover{
+    color: white;
+    background-color: red;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.search-container{
+    display: flex;
+    justify-content: center;
+}
+
+.search-container input{
+    width: 42vw;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.index{
+    padding-bottom: 1rem;
+}
+
+.index ol{
+    list-style-type: upper-roman;
+}
+
+.index .lowerIndex{
+    list-style-type: lower-roman;
+}
+
+.index a:hover{
+    color: rgb(77, 255, 246);
+}
+
+.listedEvent{
+    list-style-type: disc;
+}
+
+.referenceLink{
+    font-style: italic;
+    color: white;
+}
+
+.referenceLink:hover{
+    color: rgb(77, 255, 246);
+}
+
+span{
+    font: italic 100 small-caps 0.9rem/110% 'Times New Roman', serif;
+}
+
+.returnToTop a{
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    visibility: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+#novelButtons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hide-scrollbar{
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 735px) {
+    header strong {
+        font-size: 0.88rem;
+    }
+    header h1{
+        font-size: 1.8rem;
+    }
+    .homepageNav{
+        flex-direction: column;
+    }
+    .homepageNav div{
+        padding: 10px;
+    }
+    .hide-scrollbar{
+        overflow: visible;
+    }
+    #headerLeft{
+        display: block;
+    }
+    #headerRight{
+        display: block;
+    }
+  }
