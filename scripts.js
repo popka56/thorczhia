@@ -4,12 +4,14 @@ var topButton = document.getElementById("topAnchor");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    document.getElementById("topAnchor").style.visibility = "visible";
-  } else {
-    document.getElementById("topAnchor").style.visibility = "hidden";
+  if(screen.width > 850){
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      document.getElementById("topAnchor").style.visibility = "visible";
+    } else {
+      document.getElementById("topAnchor").style.visibility = "hidden";
+    }
   }
-}
+  }
 
 function toTopFunction() {
   document.body.scrollTop = 0;

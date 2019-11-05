@@ -57,7 +57,7 @@ body{
 }
 
 #timelineBackground{
-    background: mediumseagreen url("assets/paperSmall.png") repeat-y scroll center;
+    background: rgb(209, 173, 130) url("assets/paperSmall.png") repeat-y scroll center;
     background-size: 100% 50%;
 }
 
@@ -73,9 +73,14 @@ body{
     float: right;
 }
 
-#image{
+#imageDiv{
     display: flex;
     justify-content: center;
+}
+
+#image{
+    height: 50%; 
+    width: 50%;
 }
 
 #imageText{
@@ -110,6 +115,8 @@ nav li{
 }
 
 nav a{
+    display: block;
+    width: 90px;
     text-align: center;
     font-size: 0.9em;
     text-decoration: none;
@@ -121,7 +128,7 @@ nav a{
 
 nav a:hover{
     color: white;
-    background-color: red;
+    background-color: crimson;
 }
 
 ul{
@@ -169,9 +176,7 @@ ul{
     color: rgb(77, 255, 246);
 }
 
-span{
-    font: italic 100 small-caps 0.9rem/110% 'Times New Roman', serif;
-}
+
 
 .returnToTop a{
     position: fixed;
@@ -196,12 +201,18 @@ nav{
     overflow: hidden;
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 850px){ /*För ipad*/
     header strong {
-        font-size: 0.88rem;
+        font-size: 1.3rem;
     }
-    header h1{
-        font-size: 1.8rem;
+    header{
+        flex-direction: column;
+    }
+    #headerLeft{
+     width: 100%;   
+    }
+    #headerMiddle{
+        width: 100%; 
     }
     .homepageNav{
         flex-direction: column;
@@ -209,13 +220,85 @@ nav{
     .homepageNav div{
         padding: 10px;
     }
+    nav a{
+        color: white;
+        background-color: crimson;
+    }
+    nav a:hover{
+        color: rgb(146, 146, 146);
+        background-color: rgb(146, 38, 30);
+    }
     .hide-scrollbar{
         overflow: visible;
     }
-    #headerLeft{
-        display: block;
+    .search-container input{
+        width: 50vw;
     }
-    #headerRight{
-        display: block;
+    #image{
+        height: 80%; 
+        width: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 765px) { /*För mobilversioner ska fungera korrekt*/
+    header h1{
+        font-size: 3rem;
+    }
+    header strong {
+        font-size: 1.4rem;
+    }
+    header{
+        flex-direction: column;
+    }
+    #headerLeft{
+     width: 100%;   
+    }
+    #headerMiddle{
+        width: 100%; 
+    }
+    .content{
+        padding: 5px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    main{
+        padding-bottom: 20px;
+    }
+    main p{
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    #welcome{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .homepageNav{
+        flex-direction: column;
+    }
+    .homepageNav div{
+        padding: 10px;
+    }
+    nav a{
+        color: white;
+        background-color: crimson;
+    }
+    nav a:hover{
+        color: rgb(146, 146, 146);
+        background-color: rgb(146, 38, 30);
+    }
+    .hide-scrollbar{
+        overflow: visible;
+    }
+    .search-container{
+        padding-bottom: 20px;
+    }
+    .search-container input{
+        width: 75vw;
+        height: 25px;
+    }
+    #image{
+        height: 90%; 
+        width: 90%;
     }
   }
