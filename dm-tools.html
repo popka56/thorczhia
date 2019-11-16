@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thorczhia - DM Tools</title>
+    <meta content="Explore the world of Thorczhia!" name="description">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="assets/thorczhia-icon.ico">
+    <script src="scripts.js"></script>
+</head>
+
+<body id="timelineBackground">
+    <div class="page-container">
+        <div class="content">
+            <header>
+                <div id="headerLeft">
+                    <a href="index.html">Home</a> / <a href="dm-tools.html">DM Tools</a>
+                </div>
+                <div id="headerMiddle">
+                    <h1>DM Tools</h1>
+                    <strong>Of The Unseen</strong>
+                </div>
+                <div id="headerRight"></div>
+            </header>
+
+            <main>
+                <aside>
+                    <div id="welcome">
+                        <p>"Some things were not meant for you to see or know. If you are not the me of another world,
+                            then you have stumbled upon something horrific. Not all things are as they first seem. What
+                            you thought was a well put together story, was just a book opened at a random page."</p>
+                        <br>
+                        <em class="author">-Gerry Meiva</em>
+                    </div>
+                </aside>
+                <div id="dice">
+                    <h2>Roll A Dice</h2>
+                    <button onclick="diceD4()">Roll 1d4</button>
+                    <button onclick="diceD6()">Roll 1d6</button>
+                    <button onclick="diceD8()">Roll 1d8</button>
+                    <button onclick="diceD10()">Roll 1d10</button>
+                    <button onclick="diceD12()">Roll 1d12</button>
+                    <button onclick="diceD20()">Roll 1d20</button>
+                    <p id="dice-result">Result: N/A</p>
+                </div>
+
+                <div id="numberGenerator">
+                    <form>
+                        <h2>Random Number Generator</h2>
+                        Min Value:<input id="minValue" type="number" value="1">
+                        Max value:<input id="maxValue" type="number" value="100">
+                        <input type="button" value="Generate Number" onclick="generateNumber()">
+                        <p id="numberResult">Result: N/A</p>
+                    </form>
+                </div>
+
+                <div id="npcGenerator">
+                    <h2>Random NPC Generator</h2>
+                    <p id="npcName">Name: N/A</p>
+                    <p id="npcRace">Race: N/A</p>
+                    <p id="npcSex">Sex: N/A</p>
+                    <p id="npcPersonality">Personality Trait: N/A</p>
+                    <p id="npcGoal">Life Goal: N/A</p>
+                    <button onclick="generateNpc()">Generate Random NPC</button>
+                </div>
+            </main>
+
+            <nav class="returnToTop">
+                <a onClick="toTopFunction()" id="topAnchor" title="Go to top of the page">To Top</a>
+            </nav>
+        </div>
+        <footer>
+            Copyright &copy; 2011-2019 Hugo Viklund, All rights reserved.
+        </footer>
+    </div>
+</body>
+
+</html>
