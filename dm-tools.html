@@ -27,45 +27,57 @@
             </header>
 
             <main>
-                <aside>
-                    <div id="welcome">
-                        <p>"Some things were not meant for you to see or know. If you are not the me of another world,
-                            then you have stumbled upon something horrific. Not all things are as they first seem. What
-                            you thought was a well put together story, was just a book opened at a random page."</p>
-                        <br>
-                        <em class="author">-Gerry Meiva</em>
+                <section>
+                    <div class="toolsBlock">
+                        <div class="numberGenerator">
+                            <h2>Roll A Dice</h2>
+                            <p><button onclick="diceD4()">Roll 1d4</button>
+                                <button onclick="diceD6()">Roll 1d6</button>
+                                <button onclick="diceD8()">Roll 1d8</button><br>
+                                <button onclick="diceD10()">Roll 1d10</button>
+                                <button onclick="diceD12()">Roll 1d12</button>
+                                <button onclick="diceD20()">Roll 1d20</button></p>
+                            <p id="dice-result">Result: N/A</p>
+                        </div>
+                        <div class="numberGenerator">
+                            <h2>Random Number Generator</h2>
+                            <p>Min Value:<input id="minValue" type="number" value="1"><br>
+                                Max value:<input id="maxValue" type="number" value="100"><br>
+                                <button onclick="generateNumber()">Go!</button></p>
+                            <p id="numberResult">Result: N/A</p>
+                        </div>
                     </div>
-                </aside>
-                <div id="dice">
-                    <h2>Roll A Dice</h2>
-                    <button onclick="diceD4()">Roll 1d4</button>
-                    <button onclick="diceD6()">Roll 1d6</button>
-                    <button onclick="diceD8()">Roll 1d8</button>
-                    <button onclick="diceD10()">Roll 1d10</button>
-                    <button onclick="diceD12()">Roll 1d12</button>
-                    <button onclick="diceD20()">Roll 1d20</button>
-                    <p id="dice-result">Result: N/A</p>
-                </div>
-
-                <div id="numberGenerator">
-                    <form>
-                        <h2>Random Number Generator</h2>
-                        Min Value:<input id="minValue" type="number" value="1">
-                        Max value:<input id="maxValue" type="number" value="100">
-                        <input type="button" value="Generate Number" onclick="generateNumber()">
-                        <p id="numberResult">Result: N/A</p>
-                    </form>
-                </div>
-
-                <div id="npcGenerator">
-                    <h2>Random NPC Generator</h2>
-                    <p id="npcName">Name: N/A</p>
-                    <p id="npcRace">Race: N/A</p>
-                    <p id="npcSex">Sex: N/A</p>
-                    <p id="npcPersonality">Personality Trait: N/A</p>
-                    <p id="npcGoal">Life Goal: N/A</p>
-                    <button onclick="generateNpc()">Generate Random NPC</button>
-                </div>
+                </section>
+                <section>
+                    <div class="toolsBlock">
+                        <div class="npcGenerator">
+                            <h2>Random NPC Generator</h2>
+                            <p class="npcGeneratorBtn"><button onclick="generateNpc()">Generate NPC</button></p>
+                            <div>
+                                <p id="npcName"></p>
+                                <p id="npcRace"></p>
+                                <p id="npcSex"></p>
+                                <p id="npcPersonality"></p>
+                                <p id="npcGoal"></p>
+                            </div>
+                        </div>
+                        <div class="npcGenerator">
+                            <h2>Companion Generator</h2>
+                            <p class="npcGeneratorBtn"><button onclick="generateCompanion()">Generate Companion</button>
+                            </p>
+                            <div>
+                                <p id="companionName"></p>
+                                <p id="companionAge"></p>
+                                <p id="companionRace"></p>
+                                <p id="companionSex"></p>
+                                <p id="companionClass"></p>
+                                <p id="companionPersonality"></p>
+                                <p id="companionOrigin"></p>
+                                <p id="companionGoal"></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
 
             <nav class="returnToTop">

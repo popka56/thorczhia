@@ -1,12 +1,102 @@
+/*Fonts*/
 @font-face{
     font-family: Cinzel;
     src: url(assets/Cinzel-Regular.ttf) format('truetype');
 }
 
+/*General CSS*/
 .text-center{
     text-align: center;
 }
 
+.page-container{
+    position: relative;
+    min-height: 98vh;
+}
+
+.content{
+    padding-bottom: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+body{
+    background: linear-gradient(180deg, palegreen, mediumseagreen) fixed;
+    color: white;
+    font-size: 1.2em;
+}
+
+#timelineBackground{
+    background: rgb(209, 173, 130) url("assets/paperSmall.png") repeat-y scroll center;
+    background-size: 100% 50%;
+}
+
+#imageDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#image{
+    height: 50%; 
+    width: 50%;
+}
+
+#imageText{
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.index{
+    padding-bottom: 1rem;
+}
+
+.index ol{
+    list-style-type: upper-roman;
+}
+
+.index .lowerIndex{
+    list-style-type: lower-roman;
+}
+
+.index a:hover{
+    color: rgb(77, 255, 246);
+}
+
+.listedEvent{
+    list-style-type: disc;
+}
+
+.referenceLink{
+    font-style: italic;
+    color: white;
+}
+
+.referenceLink:hover{
+    color: rgb(77, 255, 246);
+}
+
+ul{
+    list-style-type: none;
+}
+
+.hide-scrollbar{
+    overflow: hidden;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+}
+
+.search-container input{
+    width: 42vw;
+    height: 25px;
+    border-radius: 25px;
+}
+
+/*Header CSS*/
 header{
     display: flex;
     flex-direction: row;
@@ -39,28 +129,7 @@ header{
     width: 100px;
 }
 
-.page-container{
-    position: relative;
-    min-height: 98vh;
-}
-
-.content{
-    padding-bottom: 2rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-
-body{
-    background: linear-gradient(180deg, palegreen, mediumseagreen) fixed;
-    color: white;
-    font-size: 1.2em;
-}
-
-#timelineBackground{
-    background: rgb(209, 173, 130) url("assets/paperSmall.png") repeat-y scroll center;
-    background-size: 100% 50%;
-}
-
+/*Aside CSS*/
 #welcome{
     text-align: center;
     margin-left: 6rem;
@@ -73,23 +142,7 @@ body{
     float: right;
 }
 
-#imageDiv{
-    display: flex;
-    justify-content: center;
-}
-
-#image{
-    height: 50%; 
-    width: 50%;
-}
-
-#imageText{
-    display: flex;
-    justify-content: center;
-    font-size: 0.9rem;
-    font-style: italic;
-}
-
+/*Footer CSS*/
 footer{
     position: absolute;
     bottom: 0;
@@ -100,6 +153,7 @@ footer{
     height: 2rem;
 }
 
+/*Navigation CSS*/
 .homepageNav{
     display: flex;
     flex-flow: row nowrap;
@@ -131,53 +185,6 @@ nav a:hover{
     background-color: crimson;
 }
 
-ul{
-    list-style-type: none;
-}
-
-
-.search-container{
-    display: flex;
-    justify-content: center;
-}
-
-.search-container input{
-    width: 42vw;
-    height: 25px;
-    border-radius: 25px;
-}
-
-.index{
-    padding-bottom: 1rem;
-}
-
-.index ol{
-    list-style-type: upper-roman;
-}
-
-.index .lowerIndex{
-    list-style-type: lower-roman;
-}
-
-.index a:hover{
-    color: rgb(77, 255, 246);
-}
-
-.listedEvent{
-    list-style-type: disc;
-}
-
-.referenceLink{
-    font-style: italic;
-    color: white;
-}
-
-.referenceLink:hover{
-    color: rgb(77, 255, 246);
-}
-
-
-
 .returnToTop a{
     position: fixed;
     bottom: 30px;
@@ -190,6 +197,8 @@ nav{
     justify-content: center;
 }
 
+
+/*Other CSS*/
 #novelButtons{
     display: flex;
     justify-content: center;
@@ -197,11 +206,57 @@ nav{
     text-align: center;
 }
 
-.hide-scrollbar{
-    overflow: hidden;
+
+/*DM Tools CSS*/
+#secretBtn{
+    text-decoration: none;
+    color: white;
 }
 
-@media only screen and (max-width: 850px){ /*För ipad*/
+.toolsBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.npcGenerator h2{
+    text-align: center;
+}
+
+.npcGeneratorBtn{
+    text-align: center;
+}
+
+.npcGenerator button{
+    width: 85px;
+}
+
+.npcGenerator div{
+    display: block;
+    width: 450px;
+    margin-left: 140px;
+}
+
+.numberGenerator h2{
+    text-align: center;
+}
+
+.numberGenerator p{
+    text-align: center;
+}
+
+.numberGenerator button{
+    height: 35px;
+    width: 50px;
+    margin-top: 5px;
+}
+
+.toolsBlock input{
+    width: 50px;
+}
+
+/*iPad Support*/
+@media only screen and (max-width: 850px){
     header strong {
         font-size: 1.3rem;
     }
@@ -238,10 +293,19 @@ nav{
         height: 80%; 
         width: 80%;
     }
+    .toolsBlock{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .npcGenerator div{
+        display: contents;
+        width: auto;
+    }
 }
 
-
-@media only screen and (max-width: 765px) { /*För mobilversioner ska fungera korrekt*/
+/*Mobile Support*/
+@media only screen and (max-width: 765px) {
     header h1{
         font-size: 3rem;
     }
@@ -300,5 +364,5 @@ nav{
     #image{
         height: 90%; 
         width: 90%;
-    } 
+    }
   }

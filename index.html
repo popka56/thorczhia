@@ -15,26 +15,26 @@
     <div class="page-container">
         <div class="content">
             <header>
-                    <div id="headerLeft"></div>
-                    <div id="headerMiddle">
-                        <h1>Thorczhia</h1>
-                        <strong>Of the Land and the Sea</strong>
-                    </div>
-                    <div id="headerRight"></div>
+                <div id="headerLeft"></div>
+                <div id="headerMiddle">
+                    <h1>Thorczhia</h1>
+                    <strong>Of the Land and the Sea</strong>
+                </div>
+                <div id="headerRight"></div>
             </header>
 
-            <main> 
+            <main>
 
                 <aside>
                     <div id="welcome">
                         <p>"Greetings, traveler, scholar or perhaps adventurer. Whatever you are, fate has allowed you
-                            to transcends realms and enter a pocket between worlds. Yours, and mine. For what purpose 
-                            I cannot say. Yet, I feel a strange sense of nostalgia. The universe is a mysterious thing, 
-                            is it not? That I would live to see this day, is astonishing. And, I am sure you have many 
-                            tales to tell, just like me. Nothing lasts forever, even gods have an end. Mine is waiting 
-                            for me just beyond. Be weary traveler, world seeker, one who transcends our seams of 
-                            reality, for this world you will peek into is dangerous. It is a world of treachery, 
-                            magical beasts and eternal souls. Be prepared, or return whence you came. I leave here all 
+                            to transcends realms and enter a pocket between worlds. Yours, and mine. For what purpose
+                            I cannot say. Yet, I feel a strange sense of nostalgia. The universe is a mysterious thing,
+                            is it not? That I would live to see this day, is astonishing. And, I am sure you have many
+                            tales to tell, just like me. Nothing lasts forever, even gods have an end. Mine is waiting
+                            for me just beyond. Be weary traveler, world seeker, one who transcends our seams of
+                            reality, for this world you will peek into is dangerous. It is a world of treachery,
+                            magical beasts and eternal souls. Be prepared, or return whence you came. I leave here all
                             my knowledge of this world, of my home. Of this land and sea."</p><br>
                         <em class="author">-Gerry Meiva, at the end of days</em>
                     </div>
@@ -42,7 +42,9 @@
 
             </main>
 
-            <div><h2 class="text-center">Start Exploring!</h2></div>
+            <div>
+                <h2 class="text-center">Start Exploring!</h2>
+            </div>
             <nav>
                 <div class="homepageNav">
                     <div><a href="timeline.html">Timeline</a></div>
@@ -53,19 +55,23 @@
                     <div><a href="novels.html">Novels</a></div>
                 </div>
             </nav>
-            <div><h3 class="text-center">...Or find what you are looking for.</h3></div>
+            <div>
+                <h3 class="text-center">...Or find what you are looking for.</h3>
+            </div>
             <div class="search-container">
-                <input id="searchbar" type="text" placeholder= "Search..." name="search">
-                <!--<button type="submit">Submit</button>-->
+                <form>
+                    <input id="searchbar" onsubmit="search()" type="text" placeholder="Search..." name="search">
+                </form>
             </div>
 
         </div>
         <footer>
             <div>
-                <p>Copyright &copy; 2011-2019 Hugo Viklund, All rights reserved.</p>
+                <p>Copyright &copy; 2011-2019 <a id="secretBtn" href="dm-tools.html">Hugo Viklund</a>, All rights
+                    reserved.</p>
             </div>
         </footer>
     </div>
 </body>
-  
+
 </html>
