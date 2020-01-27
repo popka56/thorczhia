@@ -1,4 +1,11 @@
 /*===General Scripts===*/
+
+//Use to change the year of copyright with every coming year, with the exception of index.html!
+addEventListener("load", onLoad);
+function onLoad(){
+document.querySelector("footer").innerHTML = "Copyright &copy; 2011-2020 Hugo Viklund, All rights reserved.";
+}
+
 var topButton = document.getElementById("topAnchor");
 
 window.onscroll = function () { scrollFunction() };

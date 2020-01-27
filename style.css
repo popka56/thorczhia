@@ -70,7 +70,6 @@ body{
 
 .referenceLink{
     font-style: italic;
-    color: white;
 }
 
 .referenceLink:hover{
@@ -204,6 +203,15 @@ nav{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding-bottom: 10px;
+}
+
+#novelButtons div{
+    padding-bottom: 10px;
+}
+
+#novelButtons a:hover{
+    color: rgb(77, 255, 246);
 }
 
 
