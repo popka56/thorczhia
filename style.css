@@ -20,33 +20,25 @@
     margin-right: 5rem;
 }
 
-body{
-    /* background: linear-gradient(180deg, #98fb98, #3cb371) fixed;
+body {
     color: white;
-    font-size: 1.2em; */
-
-    background: linear-gradient(180deg, #82d682, #30925c);
-    background-size: 400% 400%;
-
-    -webkit-animation: AnimationName 9s ease infinite;
-    -moz-animation: AnimationName 9s ease infinite;
-    animation: AnimationName 9s ease infinite;
+    font-size: 1.2rem;
+    
+	background: linear-gradient(-45deg, #23a6d5, #23d53b);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 #timelineBackground{
