@@ -21,9 +21,32 @@
 }
 
 body{
-    background: linear-gradient(180deg, palegreen, mediumseagreen) fixed;
+    /* background: linear-gradient(180deg, #98fb98, #3cb371) fixed;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.2em; */
+
+    background: linear-gradient(180deg, #82d682, #30925c);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
 }
 
 #timelineBackground{
